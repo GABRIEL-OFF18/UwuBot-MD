@@ -22,13 +22,13 @@ global.mess = {
 }
 
 global.my = {
-ch: "120363420992828502@newsletter", // oficiL
-ch2: "120363405689107729@newsletter", // Api
-ch3: "120363401404146384@newsletter" // Fedex 
+ch: "120363424677971125@newsletter", // oficiL
+ch2: "120363424677971125@newsletter", // Api
+ch3: "120363424677971125@newsletter" // Fedex 
 }
 
 let file = fileURLToPath(import.meta.url)
 watchFile(file, () => {
   unwatchFile(file)
   import(`${file}?update=${Date.now()}`)
-})
+}) 
